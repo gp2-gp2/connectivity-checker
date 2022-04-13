@@ -32,4 +32,20 @@ rm -r venv
 
 * **aiohttp**
 
-`python -m pip install aiohttp`
+```
+python -m pip install aiohttp
+```
+
+or 
+
+```
+pip install -r requirements.txt
+```
+
+### To verify later
+
+How to write a good readme.md [https://dbader.org/blog/write-a-great-readme-for-your-github-project](https://dbader.org/blog/write-a-great-readme-for-your-github-project%E2%80%B8)
+
+Template [https://github.com/dbader/readme-template](https://github.com/dbader/readme-template%E2%80%B8)
+
+Pip install / freeze [https://note.nkmk.me/en/python-pip-install-requirements/](https://note.nkmk.me/en/python-pip-install-requirements/)
