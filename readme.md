@@ -36,7 +36,7 @@ rm -r venv
 python -m pip install aiohttp
 ```
 
-or 
+or
 
 ```
 pip install -r requirements.txt
@@ -49,3 +49,5 @@ How to write a good readme.md [https://dbader.org/blog/write-a-great-readme-for-
 Template [https://github.com/dbader/readme-template](https://github.com/dbader/readme-template%E2%80%B8)
 
 Pip install / freeze [https://note.nkmk.me/en/python-pip-install-requirements/](https://note.nkmk.me/en/python-pip-install-requirements/)
+
+Original source code [https://github.com/realpython/materials/tree/master/python-site-connectivity-checker](https://github.com/realpython/materials/tree/master/python-site-connectivity-checker)
