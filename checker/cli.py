@@ -32,4 +32,4 @@ def display_check_result(result, url, error=""):
     if result:
         print("Online! 👍")
     else:
-        print("Offline? 👎 \n Error: '{error}'")
+        print(f"Offline? 👎 \n Error: '{error}'")
