@@ -99,7 +99,7 @@ Original source code [https://github.com/realpython/materials/tree/master/python
 
 ## Docker Dev Environments
 
-I just tested this repo in Docker Desktop app in Windows. Below couple remarks required to succesfuly run the app from such VC code setup.
+I just tested this repo in Docker Desktop app in Windows. Below couple remarks required to successfully run the app from such VC code setup.
 
 After opening the project in Visual Studio Code we have to open terminal and update the current linux distro.
 
@@ -111,7 +111,7 @@ Next install
 
 ```sudo apt-get install python3-venv```
 
-After those steps are completed we should be aable to proceed and setup venv.
+After those steps are completed we should be able to proceed and setup venv.
 
 Next step after virtual environment is to install pip requirements. This one is failing in that docker setup.
 Package named ```multidict``` is failing to build with below message:
@@ -121,3 +121,8 @@ Details:
 ```Command "/com.docker.devenvironments.code/venv/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-7r92pke8/multidict/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-9ifrw1lh/install-record.txt --single-version-externally-managed --compile --install-headers /com.docker.devenvironments.code/venv/include/site/python3.7/multidict" failed with error code 1 in /tmp/pip-install-7r92pke8/multidict/```
 
 I will verify later what is needed to fix this one.
+
+Short update. Solution was quite simple.
+We just have to update pip before installing other packages.
+
+```python3 -m pip install --upgrade pip```
